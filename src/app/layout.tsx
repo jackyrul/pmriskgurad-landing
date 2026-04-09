@@ -7,6 +7,7 @@ import { Footer } from "@/components/blocks/footer";
 import { Navbar } from "@/components/blocks/navbar";
 import { StyleGlideProvider } from "@/components/styleglide-provider";
 import { ThemeProvider } from "@/components/theme-provider";
+import { withBasePath } from "@/lib/with-base-path";
 import "@/styles/globals.css";
 
 const dmSans = localFont({
@@ -87,14 +88,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon/favicon.ico", sizes: "48x48" },
-      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon/favicon.ico" },
+      { url: withBasePath("/favicon/favicon.ico"), sizes: "48x48" },
+      { url: withBasePath("/favicon/favicon.svg"), type: "image/svg+xml" },
+      { url: withBasePath("/favicon/favicon-96x96.png"), sizes: "96x96", type: "image/png" },
+      { url: withBasePath("/favicon/favicon.svg"), type: "image/svg+xml" },
+      { url: withBasePath("/favicon/favicon.ico") },
     ],
-    apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180" }],
-    shortcut: [{ url: "/favicon/favicon.ico" }],
+    apple: [{ url: withBasePath("/favicon/apple-touch-icon.png"), sizes: "180x180" }],
+    shortcut: [{ url: withBasePath("/favicon/favicon.ico") }],
   },
   openGraph: {
     title: "PM Risk Guard - Risk Guardrails for Polymarket",
@@ -103,7 +104,7 @@ export const metadata: Metadata = {
     siteName: "PM Risk Guard",
     images: [
       {
-        url: "/og-image.jpg",
+        url: withBasePath("/og-image.jpg"),
         width: 1200,
         height: 630,
         alt: "PM Risk Guard extension screenshots",
@@ -115,7 +116,7 @@ export const metadata: Metadata = {
     title: "PM Risk Guard - Risk Guardrails for Polymarket",
     description:
       "Privacy-first guardrails for Polymarket trading: risk score, cooling-off, risk budget, and self-exclusion.",
-    images: ["/og-image.jpg"],
+    images: [withBasePath("/og-image.jpg")],
     creator: "@pmriskguard",
   },
 };

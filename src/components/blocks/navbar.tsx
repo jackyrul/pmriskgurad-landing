@@ -19,6 +19,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { withBasePath } from "@/lib/with-base-path";
 
 const ITEMS = [
   {
@@ -58,14 +59,14 @@ export const Navbar = () => {
       <div className="flex items-center justify-between px-6 py-3">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <Image
-            src="/logo/logo-no-bg-black-white.png"
+            src={withBasePath("/logo/logo-no-bg-black-white.png")}
             alt="PM Risk Guard logo"
             width={34}
             height={34}
             className="block dark:hidden"
           />
           <Image
-            src="/logo/logo-no-bg-white-black.png"
+            src={withBasePath("/logo/logo-no-bg-white-black.png")}
             alt="PM Risk Guard logo"
             width={34}
             height={34}

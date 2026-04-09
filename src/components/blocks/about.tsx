@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { withBasePath } from "@/lib/with-base-path";
 
 const About = () => {
   return (
@@ -11,8 +12,8 @@ const About = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: "/about/1.webp", alt: "Team collaboration" },
-            { src: "/about/2.webp", alt: "Team workspace" },
+            { src: withBasePath("/about/1.webp"), alt: "Team collaboration" },
+            { src: withBasePath("/about/2.webp"), alt: "Team workspace" },
           ]}
           className="xl:-translate-x-10"
         />
@@ -41,8 +42,8 @@ const About = () => {
         />
         <ImageSection
           images={[
-            { src: "/about/3.webp", alt: "Modern workspace" },
-            { src: "/about/4.webp", alt: "Team collaboration" },
+            { src: withBasePath("/about/3.webp"), alt: "Modern workspace" },
+            { src: withBasePath("/about/4.webp"), alt: "Team collaboration" },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />

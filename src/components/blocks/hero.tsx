@@ -11,6 +11,7 @@ import {
 
 import { DashedLine } from "@/components/dashed-line";
 import { Button } from "@/components/ui/button";
+import { withBasePath } from "@/lib/with-base-path";
 
 const features = [
   {
@@ -113,7 +114,7 @@ export const Hero = () => {
             Dangerous (87) - Cooling-off active
           </div>
           <Image
-            src="/screenshots/tiles/dashboard-tile-dark.png"
+            src={withBasePath("/screenshots/tiles/dashboard-tile-dark.png")}
             alt="PM Risk Guard dashboard screenshot"
             fill
             className="rounded-2xl object-cover object-left-top shadow-lg max-lg:rounded-tr-none"

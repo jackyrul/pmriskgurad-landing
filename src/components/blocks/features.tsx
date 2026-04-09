@@ -3,21 +3,22 @@ import Image from "next/image";
 import { DashedLine } from "../dashed-line";
 
 import { Card, CardContent } from "@/components/ui/card";
+import { withBasePath } from "@/lib/with-base-path";
 
 const items = [
   {
     title: "Notification alerts: instant loss warnings",
-    image: "/screenshots/chrome-notification-loss-alert2.png",
+    image: withBasePath("/screenshots/chrome-notification-loss-alert2.png"),
     imageClassName: "object-contain object-center",
   },
   {
     title: "Cooling-off modal: pause before risky actions",
-    image: "/screenshots/cooling-off-modal-with-polymarket-bg.png",
+    image: withBasePath("/screenshots/cooling-off-modal-with-polymarket-bg.png"),
     imageClassName: "object-cover object-left-top ps-4 pt-2",
   },
   {
     title: "Guard banner: in-page protection prompts",
-    image: "/screenshots/soft-guard-banner.png",
+    image: withBasePath("/screenshots/soft-guard-banner.png"),
     imageClassName: "object-cover object-left-top ps-4 pt-2",
   },
 ];

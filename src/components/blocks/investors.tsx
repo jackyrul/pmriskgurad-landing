@@ -1,30 +1,32 @@
 import Image from "next/image";
 
+import { withBasePath } from "@/lib/with-base-path";
+
 const investors = [
   {
     name: "Dennis Bouvard",
     company: "Blackbird Ventures",
-    image: "/investors/1.webp",
+    image: withBasePath("/investors/1.webp"),
   },
   {
     name: "Renatus Gerard",
     company: "Center Studies",
-    image: "/investors/2.webp",
+    image: withBasePath("/investors/2.webp"),
   },
   {
     name: "Leslie Alexander",
     company: "TechNexus",
-    image: "/investors/3.webp",
+    image: withBasePath("/investors/3.webp"),
   },
   {
     name: "Matthew Stephens",
     company: "Etymol Cap",
-    image: "/investors/4.webp",
+    image: withBasePath("/investors/4.webp"),
   },
   {
     name: "Josephine Newman",
     company: "Vandenberg",
-    image: "/investors/5.webp",
+    image: withBasePath("/investors/5.webp"),
   },
 ];
 

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
+import { withBasePath } from "@/lib/with-base-path";
 
 const Login = () => {
   return (
@@ -18,14 +19,14 @@ const Login = () => {
             <Card className="mx-auto w-full max-w-sm">
               <CardHeader className="flex flex-col items-center space-y-0">
                 <Image
-                  src="/logo/logo-no-bg-black-white.png"
+                  src={withBasePath("/logo/logo-no-bg-black-white.png")}
                   alt="PM Risk Guard logo"
                   width={48}
                   height={48}
                   className="mb-3 block dark:hidden"
                 />
                 <Image
-                  src="/logo/logo-no-bg-white-black.png"
+                  src={withBasePath("/logo/logo-no-bg-white-black.png")}
                   alt="PM Risk Guard logo"
                   width={48}
                   height={48}

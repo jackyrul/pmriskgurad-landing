@@ -11,37 +11,38 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { withBasePath } from "@/lib/with-base-path";
 
 const items = [
   {
     title: "Dashboard",
     description:
       "At-a-glance risk context: score, bankroll, exposure, and period PnL in one view.",
-    image: "/screenshots/tiles/dashboard-tile-dark.png",
+    image: withBasePath("/screenshots/tiles/dashboard-tile-dark.png"),
   },
   {
     title: "Browser Notifications",
     description:
       "Optional browser alerts notify you when period losses hit your configured threshold.",
-    image: "/screenshots/tiles/browser-notifications-tile-dark.png",
+    image: withBasePath("/screenshots/tiles/browser-notifications-tile-dark.png"),
   },
   {
     title: "Alerts",
     description:
       "Alert settings help surface meaningful risk changes without overwhelming noise.",
-    image: "/screenshots/tiles/alrets-tile-dark.png",
+    image: withBasePath("/screenshots/tiles/alrets-tile-dark.png"),
   },
   {
     title: "Cooling-off and Risk Budget",
     description:
       "Configure cooldown behavior and budget constraints to slow risky escalation.",
-    image: "/screenshots/tiles/coolin-off-and-risk-budged-tiles-dark.png",
+    image: withBasePath("/screenshots/tiles/coolin-off-and-risk-budged-tiles-dark.png"),
   },
   {
     title: "Micro Filters",
     description:
       "Fine-grained filters tune what activity contributes to score and interventions.",
-    image: "/screenshots/tiles/micro-filters-tile-dark.png",
+    image: withBasePath("/screenshots/tiles/micro-filters-tile-dark.png"),
   },
 ];
 
