@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   ArrowRight,
@@ -59,7 +60,7 @@ export const Hero = () => {
 
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
-              <a href="/contact">Add to Chrome - Free</a>
+              <Link href="/contact">Add to Chrome - Free</Link>
             </Button>
             <Button
               variant="outline"
