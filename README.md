@@ -1,12 +1,12 @@
-# Mainline Next.js Template
+# PM Risk Guard Landing
 
-Mainline is a free template built with shadcn/ui, Tailwind 4 and Next.js 15.
+Landing site for PM Risk Guard, built with shadcn/ui, Tailwind 4 and Next.js 15.
 
-- [Demo](https://mainline-nextjs-template.vercel.app/)
+- [Demo](https://pm-risk-guard.vercel.app/)
 - [Documentation](https://docs.shadcnblocks.com/templates/getting-started)
-- [Figma](https://www.figma.com/design/cFCLMj7DFv0sK7EVsqKeTa/Mainline?node-id=23250-13201&t=I1nAdchDpknii5Bd-1)
+- [Figma](https://www.figma.com/)
 
-![Mainline NextJS Template screenshot](./public/og-image.jpg)
+![PM Risk Guard screenshot](./public/og-image.jpg)
 
 ## Getting Started
 

@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ChevronRight, Github } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -23,25 +23,24 @@ import { cn } from "@/lib/utils";
 const ITEMS = [
   {
     label: "Features",
-    href: "#features",
+    href: "/#features",
     dropdownItems: [
       {
-        title: "Modern product teams",
-        href: "/#feature-modern-teams",
+        title: "Core capabilities",
+        href: "/#features",
         description:
-          "Mainline is built on the habits that make the best product teams successful",
+          "Risk scoring, cooling-off guardrails, budgets, and self-exclusion controls.",
       },
       {
-        title: "Resource Allocation",
-        href: "/#resource-allocation",
-        description: "Mainline your resource allocation and execution",
+        title: "Product walkthrough",
+        href: "/#screenshots",
+        description: "See real dashboard, guardrails, settings, and cooling-off screenshots.",
       },
     ],
   },
-  { label: "About Us", href: "/about" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "How It Works", href: "/#how-it-works" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
+  { label: "Privacy", href: "/privacy" },
 ];
 
 export const Navbar = () => {
@@ -59,12 +58,20 @@ export const Navbar = () => {
       <div className="flex items-center justify-between px-6 py-3">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <Image
-            src="/logo.svg"
-            alt="logo"
-            width={94}
-            height={18}
-            className="dark:invert"
+            src="/logo/logo-no-bg-black-white.png"
+            alt="PM Risk Guard logo"
+            width={34}
+            height={34}
+            className="block dark:hidden"
           />
+          <Image
+            src="/logo/logo-no-bg-white-black.png"
+            alt="PM Risk Guard logo"
+            width={34}
+            height={34}
+            className="hidden dark:block"
+          />
+          <span className="text-sm font-semibold tracking-tight max-md:hidden">PM Risk Guard</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -120,19 +127,11 @@ export const Navbar = () => {
         {/* Auth Buttons */}
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
-          <Link href="/login" className="max-lg:hidden">
+          <Link href="/contact" className="max-lg:hidden">
             <Button variant="outline">
-              <span className="relative z-10">Login</span>
+              <span className="relative z-10">Contact</span>
             </Button>
           </Link>
-          <a
-            href="https://github.com/shadcnblocks/mainline-nextjs-template"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Github className="size-4" />
-            <span className="sr-only">GitHub</span>
-          </a>
-
           {/* Hamburger Menu Button (Mobile Only) */}
           <button
             className="text-muted-foreground relative flex size-8 lg:hidden"

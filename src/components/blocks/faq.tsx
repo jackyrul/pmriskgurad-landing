@@ -10,52 +10,62 @@ import { cn } from "@/lib/utils";
 
 const categories = [
   {
-    title: "Support",
+    title: "Risk model and guardrails",
     questions: [
       {
-        question: "How do I update my account without breaking my laptop?",
+        question: "When does cooling-off start?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Cooling-off soft guidance starts when risk score reaches 71. Hard protection begins at 85 and blocks risk-increasing actions.",
       },
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "How does hard cooling-off end?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Hard protection remains active until cooldown time has passed and risk falls below the hard-exit threshold. This helps prevent immediate re-entry after a spike.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "What goes into the risk score?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Risk score combines loss streak, trade frequency, exposure, period PnL percentage, and order-flow intensity, with optional micro-behavior penalties.",
       },
     ],
   },
   {
-    title: "Your account",
+    title: "Privacy and data",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Do you collect private keys or custody funds?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "No. PM Risk Guard does not collect private keys and does not take custody of funds.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Where is my extension state stored?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Settings and guardrail state are stored locally in browser extension storage.",
+      },
+      {
+        question: "What network access does the extension need?",
+        answer:
+          "The extension is designed for least privilege and uses prediction-market endpoints required to compute and display risk context.",
       },
     ],
   },
   {
-    title: "Other questions",
+    title: "Usage",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Can I still close positions during hard cooling-off?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Yes. The guardrail is designed to allow risk reduction while blocking actions that increase risk.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Can I set self-exclusion manually?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Yes. You can activate self-exclusion windows directly from settings.",
+      },
+      {
+        question: "Do alerts support browser notifications?",
+        answer:
+          "Yes. You can enable notifications and choose alert thresholds to surface meaningful risk events.",
       },
     ],
   },
@@ -81,11 +91,11 @@ export const FAQ = ({
               </h1>
             ) : (
               <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-                Got Questions?
+                Frequently asked questions
               </h2>
             )}
             <p className="text-muted-foreground max-w-md leading-snug lg:mx-auto">
-              If you can't find what you're looking for,{" "}
+              If you need help with policy behavior or setup details,{" "}
               <Link href="/contact" className="underline underline-offset-4">
                 get in touch
               </Link>

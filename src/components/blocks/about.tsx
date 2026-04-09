@@ -20,7 +20,7 @@ const About = () => {
         <TextSection
           title="The team"
           paragraphs={[
-            "We started building Mainline in 2019 and launched in 2022. Every endpoint has been designed from the ground up — with no technical debt or legacy systems. We are purpose-built to power project management innovation for the next hundred years.",
+            "We started building PM Risk Guard to make high-velocity prediction trading safer and more deliberate. Every release is focused on practical risk controls that are easy to understand and use.",
             "We are 100% founder and team-owned, profitable, and we keep our team lean. Over time, this page will become more polished, but for now, we're focused on delivering for developers.",
             "If you're interested in building the future of PM, check out our open roles below.",
           ]}
@@ -35,8 +35,8 @@ const About = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <TextSection
           paragraphs={[
-            "At Mainline, we are dedicated to transforming the way teams plan, execute, and deliver projects. Our mission is to provide our customers with an unbeatable edge over delays, inefficiencies, and disorganisation through actionable insights and seamless collaboration. We'll stop at nothing to give you the tools you need to get every project across the finish line.",
-            "We're customer-obsessed — investing the time to understand every aspect of your workflow so that we can help you operate better than ever before. We're all in this together because your success is our success. In our history as a company, we've never lost a customer, because when your projects succeed, so do we.",
+            "At PM Risk Guard, we are dedicated to helping users trade with discipline by combining clear risk signals with actionable guardrails. Our goal is to reduce impulsive, high-risk behavior without blocking healthy risk management.",
+            "We are customer-obsessed and iterate quickly. We listen closely to user feedback and improve risk scoring, cooling-off behavior, and UI clarity so guardrails remain effective and trustworthy.",
           ]}
         />
         <ImageSection

@@ -63,29 +63,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mainline - Modern Next.js Template",
-    template: "%s | Mainline",
+    default: "PM Risk Guard - Risk Guardrails for Polymarket",
+    template: "%s | PM Risk Guard",
   },
   description:
-    "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+    "Privacy-first browser guardrails for Polymarket. Monitor risk score, set limits, and trigger cooling-off protection for safer trading decisions.",
   keywords: [
-    "Next.js",
-    "nextjs template",
-    "nextjs theme",
-    "nextjs starter",
-    "shadcn template",
-    "shadcn theme",
-    "shadcn starter",
-    "tailwind template",
-    "tailwind theme",
-    "tailwind starter",
-    "mdx template",
-    "mdx theme",
-    "mdx starter",
+    "Polymarket",
+    "risk guardrails",
+    "responsible trading",
+    "cooling-off",
+    "self-exclusion",
+    "trading risk score",
+    "browser extension",
+    "wallet risk monitoring",
   ],
-  authors: [{ name: "shadcnblocks.com" }],
-  creator: "shadcnblocks.com",
-  publisher: "shadcnblocks.com",
+  authors: [{ name: "PM Risk Guard" }],
+  creator: "PM Risk Guard",
+  publisher: "PM Risk Guard",
   robots: {
     index: true,
     follow: true,
@@ -102,26 +97,26 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/favicon/favicon.ico" }],
   },
   openGraph: {
-    title: "Mainline - Modern Next.js Template",
+    title: "PM Risk Guard - Risk Guardrails for Polymarket",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
-    siteName: "Mainline",
+      "Monitor risk behavior, configure cooling-off policy, and block risk-increasing actions during high-risk moments.",
+    siteName: "PM Risk Guard",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mainline - Modern Next.js Template",
+        alt: "PM Risk Guard extension screenshots",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mainline - Modern Next.js Template",
+    title: "PM Risk Guard - Risk Guardrails for Polymarket",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+      "Privacy-first guardrails for Polymarket trading: risk score, cooling-off, risk budget, and self-exclusion.",
     images: ["/og-image.jpg"],
-    creator: "@ausrobdev",
+    creator: "@pmriskguard",
   },
 };
 

@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-
-import { ChevronRight } from "lucide-react";
 
 import { DashedLine } from "../dashed-line";
 
@@ -9,40 +6,43 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const items = [
   {
-    title: "Purpose-built for product development",
-    image: "/features/triage-card.svg",
+    title: "Notification alerts: instant loss warnings",
+    image: "/screenshots/chrome-notification-loss-alert2.png",
+    imageClassName: "object-contain object-center",
   },
   {
-    title: "Manage projects end-to-end",
-    image: "/features/cycle-card.svg",
+    title: "Cooling-off modal: pause before risky actions",
+    image: "/screenshots/cooling-off-modal-with-polymarket-bg.png",
+    imageClassName: "object-cover object-left-top ps-4 pt-2",
   },
   {
-    title: "Build momentum and healthy habits",
-    image: "/features/overview-card.svg",
+    title: "Guard banner: in-page protection prompts",
+    image: "/screenshots/soft-guard-banner.png",
+    imageClassName: "object-cover object-left-top ps-4 pt-2",
   },
 ];
 
 export const Features = () => {
   return (
-    <section id="feature-modern-teams" className="pb-28 lg:pb-32">
+    <section id="features" className="pb-28 lg:pb-32">
       <div className="container">
         {/* Top dashed line with text */}
         <div className="relative flex items-center justify-center">
           <DashedLine className="text-muted-foreground" />
           <span className="bg-muted text-muted-foreground absolute px-3 font-mono text-sm font-medium tracking-wide max-md:hidden">
-            MEASURE TWICE. CUT ONCE.
+            MONITOR RISK. ACT DELIBERATELY.
           </span>
         </div>
 
         {/* Content */}
         <div className="mx-auto mt-10 grid max-w-4xl items-center gap-3 md:gap-0 lg:mt-24 lg:grid-cols-2">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Made for modern product teams
+            Built for responsible prediction market trading
           </h2>
           <p className="text-muted-foreground leading-snug">
-            Mainline is built on the habits that make the best product teams
-            successful: staying focused, moving quickly, and always aiming for
-            high-quality work.
+            PM Risk Guard turns behavior signals into practical guardrails:
+            dashboards for context, policy controls for intervention, and on-page
+            enforcement during high-risk moments.
           </p>
         </div>
 
@@ -57,24 +57,16 @@ export const Features = () => {
                       src={item.image}
                       alt={`${item.title} interface`}
                       fill
-                      className="object-cover object-left-top ps-4 pt-2"
+                      className={item.imageClassName}
                     />
                     <div className="from-background absolute inset-0 z-10 bg-linear-to-t via-transparent to-transparent" />
                   </div>
 
-                  <Link
-                    href="#"
-                    className={
-                      "group flex items-center justify-between gap-4 pe-4 pt-4 md:pe-6 md:pt-6"
-                    }
-                  >
+                  <div className="pe-4 pt-4 md:pe-6 md:pt-6">
                     <h3 className="font-display max-w-60 text-2xl leading-tight font-bold tracking-tight">
                       {item.title}
                     </h3>
-                    <div className="rounded-full border p-2">
-                      <ChevronRight className="size-6 transition-transform group-hover:translate-x-1 lg:size-9" />
-                    </div>
-                  </Link>
+                  </div>
                 </div>
                 {i < items.length - 1 && (
                   <div className="relative hidden md:block">

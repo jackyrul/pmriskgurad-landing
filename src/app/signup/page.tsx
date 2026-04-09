@@ -17,15 +17,23 @@ const Signup = () => {
             <Card className="mx-auto w-full max-w-sm">
               <CardHeader className="flex flex-col items-center space-y-0">
                 <Image
-                  src="/logo.svg"
-                  alt="logo"
-                  width={94}
-                  height={18}
-                  className="mb-7 dark:invert"
+                  src="/logo/logo-no-bg-black-white.png"
+                  alt="PM Risk Guard logo"
+                  width={48}
+                  height={48}
+                  className="mb-3 block dark:hidden"
                 />
-                <p className="mb-2 text-2xl font-bold">Start your free trial</p>
+                <Image
+                  src="/logo/logo-no-bg-white-black.png"
+                  alt="PM Risk Guard logo"
+                  width={48}
+                  height={48}
+                  className="mb-3 hidden dark:block"
+                />
+                <p className="mb-4 text-sm font-medium tracking-tight">PM Risk Guard</p>
+                <p className="mb-2 text-2xl font-bold">Set up your account</p>
                 <p className="text-muted-foreground">
-                  Sign up in less than 2 minutes.
+                  Create your profile in under 2 minutes.
                 </p>
               </CardHeader>
               <CardContent>

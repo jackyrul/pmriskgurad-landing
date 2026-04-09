@@ -29,23 +29,19 @@ export function AboutHero() {
           </h1>
 
           <p className="text-muted-foreground mt-5 text-2xl md:text-3xl lg:text-4xl">
-            Mainline is bringing modern software to life with AI magic.
+            PM Risk Guard is bringing practical safety tooling to prediction market trading.
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg text-balance md:block lg:mt-12">
-            At Mainline, we are dedicated to transforming the way teams plan,
-            execute, and deliver projects. Our mission is to provide our
-            customers with an unbeatable edge over delays, inefficiencies, and
-            disorganisation through actionable insights and seamless
-            collaboration. We’ll stop at nothing to give you the tools you need
-            to get every project across the finish line.
+            At PM Risk Guard, we are focused on helping traders build healthier
+            habits with clear guardrails and transparent risk signals. Our
+            mission is to support deliberate decision-making with real-time
+            context, cooling-off interventions, and user-controlled limits.
             <br />
             <br />
-            We’re customer-obsessed — investing the time to understand every
-            aspect of your workflow so that we can help you operate better than
-            ever before. We’re all in this together because your success is our
-            success. In our history as a company, we’ve never lost a customer,
-            because when your projects succeed, so do we.
+            We are product-obsessed and privacy-first. We continuously refine
+            our model based on real user behavior so the app stays useful,
+            understandable, and respectful of user choice.
           </p>
         </div>
 

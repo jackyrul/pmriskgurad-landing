@@ -97,7 +97,7 @@ const comparisonFeatures: FeatureSection[] = [
         enterprise: true,
       },
       {
-        name: "Mainline AI",
+        name: "PM Risk Guard insights",
         free: null,
         startup: true,
         enterprise: true,
