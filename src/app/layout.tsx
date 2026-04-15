@@ -63,6 +63,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pmriskguard.com"),
   title: {
     default: "PM Risk Guard - Risk Guardrails for Polymarket",
     template: "%s | PM Risk Guard",
