@@ -12,6 +12,7 @@ export function Footer() {
   ];
 
   const legal = [{ name: "Privacy Policy", href: "/privacy" }];
+  const social = [{ name: "X (Twitter)", href: "https://x.com/pmriskguard" }];
 
   return (
     <footer className="flex flex-col items-center gap-14 pt-28 lg:pt-32">
@@ -58,6 +59,20 @@ export function Footer() {
               >
                 {item.name}
               </Link>
+            </li>
+          ))}
+        </ul>
+        <ul className="flex flex-wrap items-center justify-center gap-6">
+          {social.map((item) => (
+            <li key={item.name}>
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground text-sm transition-opacity hover:opacity-75"
+              >
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>
