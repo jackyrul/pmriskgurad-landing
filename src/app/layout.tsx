@@ -104,7 +104,7 @@ export const metadata: Metadata = {
     siteName: "PM Risk Guard",
     images: [
       {
-        url: withBasePath("/og-image.jpg"),
+        url: withBasePath("/og-image.png"),
         width: 1200,
         height: 630,
         alt: "PM Risk Guard extension screenshots",
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
     title: "PM Risk Guard - Risk Guardrails for Polymarket",
     description:
       "Privacy-first guardrails for Polymarket trading: risk score, cooling-off, risk budget, and self-exclusion.",
-    images: [withBasePath("/og-image.jpg")],
+    images: [withBasePath("/og-image.png")],
     creator: "@pmriskguard",
   },
 };
