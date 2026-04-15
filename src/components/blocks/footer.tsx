@@ -25,7 +25,13 @@ export function Footer() {
         </p>
         <div>
           <Button size="lg" className="mt-4" asChild>
-            <Link href="/#screenshots">Explore Product Screens</Link>
+            <a
+              href="https://tally.so/r/yPEWLd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Waitlist
+            </a>
           </Button>
         </div>
       </div>

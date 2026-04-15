@@ -61,7 +61,13 @@ export const Hero = () => {
 
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
-              <Link href="/contact">Add to Chrome - Free</Link>
+              <a
+                href="https://tally.so/r/yPEWLd"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Waitlist
+              </a>
             </Button>
             <Button
               variant="outline"
@@ -111,7 +117,7 @@ export const Hero = () => {
       <div className="mt-12 max-lg:ml-6 max-lg:h-[550px] max-lg:overflow-hidden md:mt-20 lg:container lg:mt-24">
         <div className="relative h-[793px] w-full">
           <div className="bg-background/95 text-foreground absolute top-4 right-4 z-20 rounded-full border px-3 py-1 text-xs font-medium shadow-sm">
-            Dangerous (87) - Cooling-off active
+            Risk score: 2
           </div>
           <Image
             src={withBasePath("/screenshots/tiles/dashboard-tile-dark.png")}

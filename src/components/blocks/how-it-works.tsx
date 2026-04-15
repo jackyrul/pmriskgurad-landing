@@ -98,7 +98,13 @@ export const HowItWorks = () => {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:mt-10">
           <Button asChild>
-            <Link href="/contact">Add to Chrome - Free</Link>
+            <a
+              href="https://tally.so/r/yPEWLd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Waitlist
+            </a>
           </Button>
           <Button variant="outline" asChild>
             <Link href="/#screenshots">View Dashboard Demo</Link>

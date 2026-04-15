@@ -128,11 +128,15 @@ export const Navbar = () => {
         {/* Auth Buttons */}
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
-          <Link href="/contact" className="max-lg:hidden">
-            <Button variant="outline">
-              <span className="relative z-10">Contact</span>
-            </Button>
-          </Link>
+          <Button variant="outline" className="max-lg:hidden" asChild>
+            <a
+              href="https://tally.so/r/yPEWLd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="relative z-10">Join Waitlist</span>
+            </a>
+          </Button>
           {/* Hamburger Menu Button (Mobile Only) */}
           <button
             className="text-muted-foreground relative flex size-8 lg:hidden"
