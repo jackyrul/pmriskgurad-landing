@@ -1,0 +1,24 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://pmriskguard.com/api",
+      "items": [
+        {
+          "href": "https://pmriskguard.com/openapi.json",
+          "rel": "service-desc",
+          "type": "application/openapi+json"
+        },
+        {
+          "href": "https://pmriskguard.com/about",
+          "rel": "service-doc",
+          "type": "text/html"
+        },
+        {
+          "href": "https://pmriskguard.com/api-status.json",
+          "rel": "status",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "pmriskguard-navigation",
+      "type": "skill-md",
+      "description": "Navigate PM Risk Guard pages for pricing, FAQ, contact, and privacy.",
+      "url": "https://pmriskguard.com/.well-known/agent-skills/pmriskguard-navigation/SKILL.md",
+      "digest": "sha256:cea7e3845ef215a1b66a50c1cad111ae4deb2464332fa6a75565c151c4917ce0"
+    }
+  ]
+}

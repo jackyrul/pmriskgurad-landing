@@ -1,0 +1,60 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /signup
+
+User-agent: GPTBot
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Bytespider
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: CCBot
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /login
+Disallow: /signup
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+Sitemap: https://pmriskguard.com/sitemap.xml

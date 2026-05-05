@@ -1,0 +1,5 @@
+{
+  "resource": "https://pmriskguard.com/api",
+  "authorization_servers": ["https://pmriskguard.com"],
+  "scopes_supported": ["api.read"]
+}

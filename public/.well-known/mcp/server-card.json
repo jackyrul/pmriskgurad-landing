@@ -1,0 +1,17 @@
+{
+  "serverInfo": {
+    "name": "PM Risk Guard WebMCP Server",
+    "version": "1.0.0"
+  },
+  "transports": [
+    {
+      "type": "streamable-http",
+      "endpoint": "https://pmriskguard.com/mcp"
+    }
+  ],
+  "capabilities": {
+    "tools": {},
+    "resources": {},
+    "prompts": {}
+  }
+}

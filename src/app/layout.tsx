@@ -7,6 +7,7 @@ import { Footer } from "@/components/blocks/footer";
 import { Navbar } from "@/components/blocks/navbar";
 import { StyleGlideProvider } from "@/components/styleglide-provider";
 import { ThemeProvider } from "@/components/theme-provider";
+import { WebMcpProvider } from "@/components/webmcp-provider";
 import { withBasePath } from "@/lib/with-base-path";
 import "@/styles/globals.css";
 
@@ -144,6 +145,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <StyleGlideProvider />
+          <WebMcpProvider />
           <Navbar />
           <main className="">{children}</main>
           <Footer />

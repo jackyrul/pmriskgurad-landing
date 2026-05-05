@@ -1,0 +1,26 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PM Risk Guard Public API",
+    "version": "1.0.0",
+    "description": "Discovery metadata for PM Risk Guard services."
+  },
+  "servers": [
+    {
+      "url": "https://pmriskguard.com/api"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Service health",
+        "operationId": "getHealth",
+        "responses": {
+          "200": {
+            "description": "Service is healthy."
+          }
+        }
+      }
+    }
+  }
+}
