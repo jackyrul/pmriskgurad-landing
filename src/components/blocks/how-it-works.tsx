@@ -99,11 +99,11 @@ export const HowItWorks = () => {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:mt-10">
           <Button asChild>
             <a
-              href="https://tally.so/r/yPEWLd"
+              href="https://chromewebstore.google.com/detail/pm-risk-guard/eimnenpidnfkaponhjijemkjkgemnflc"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Join Waitlist
+              Add to Chrome
             </a>
           </Button>
           <Button variant="outline" asChild>

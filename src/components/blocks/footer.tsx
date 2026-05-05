@@ -27,11 +27,11 @@ export function Footer() {
         <div>
           <Button size="lg" className="mt-4" asChild>
             <a
-              href="https://tally.so/r/yPEWLd"
+              href="https://chromewebstore.google.com/detail/pm-risk-guard/eimnenpidnfkaponhjijemkjkgemnflc"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Join Waitlist
+              Add to Chrome
             </a>
           </Button>
         </div>

@@ -49,6 +49,9 @@ export const Hero = () => {
             PM Risk Guard helps you set guardrails before emotions take over, so
             every session stays within your plan.
           </p>
+          <p className="text-muted-foreground mt-2 max-w-2xl text-sm leading-snug">
+            Live on the Chrome Web Store.
+          </p>
           <p className="text-muted-foreground mt-3 max-w-2xl text-sm leading-snug">
             Built for responsible traders on prediction markets. Your keys stay
             in your wallet and all settings remain in browser extension storage.
@@ -61,11 +64,11 @@ export const Hero = () => {
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
               <a
-                href="https://tally.so/r/yPEWLd"
+                href="https://chromewebstore.google.com/detail/pm-risk-guard/eimnenpidnfkaponhjijemkjkgemnflc"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Join Waitlist
+                Add to Chrome
               </a>
             </Button>
             <Button

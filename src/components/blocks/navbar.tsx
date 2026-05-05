@@ -130,11 +130,11 @@ export const Navbar = () => {
           <ThemeToggle />
           <Button variant="outline" className="max-lg:hidden" asChild>
             <a
-              href="https://tally.so/r/yPEWLd"
+              href="https://chromewebstore.google.com/detail/pm-risk-guard/eimnenpidnfkaponhjijemkjkgemnflc"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="relative z-10">Join Waitlist</span>
+              <span className="relative z-10">Add to Chrome</span>
             </a>
           </Button>
           {/* Hamburger Menu Button (Mobile Only) */}

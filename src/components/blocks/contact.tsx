@@ -7,24 +7,26 @@ export default function Contact() {
     <section className="py-28 lg:py-32 lg:pt-44">
       <div className="container max-w-3xl">
         <h1 className="text-center text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-          Join the Waitlist
+          Get PM Risk Guard
         </h1>
         <p className="text-muted-foreground mx-auto mt-4 max-w-lg text-center leading-snug">
-          Real-time risk scoring, cooling-off protection, and on-page guardrails
-          are dropping soon. Enter your email below to be first in line.
+          PM Risk Guard is live on the Chrome Web Store. Install the
+          extension to add responsible trading guardrails to your workflow.
         </p>
 
-        <div className="bg-card mx-auto mt-10 w-full overflow-hidden rounded-2xl border shadow-sm md:mt-14 lg:mt-16">
-          <iframe
-            src="https://tally.so/r/yPEWLd?transparentBackground=1"
-            width="100%"
-            height="640"
-            frameBorder="0"
-            marginHeight={0}
-            marginWidth={0}
-            title="PM Risk Guard waitlist form"
-            className="bg-background"
-          />
+        <div className="bg-card mx-auto mt-10 flex w-full flex-col items-center rounded-2xl border p-8 text-center shadow-sm md:mt-14 lg:mt-16">
+          <p className="text-muted-foreground max-w-xl text-sm leading-snug">
+            Add PM Risk Guard to Chrome to access bankroll protection, live risk
+            scoring, cooldown tools, and self-exclusion options.
+          </p>
+          <Link
+            href="https://chromewebstore.google.com/detail/pm-risk-guard/eimnenpidnfkaponhjijemkjkgemnflc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex rounded-md border px-5 py-2.5 font-medium transition-colors hover:bg-accent"
+          >
+            Add to Chrome
+          </Link>
         </div>
 
         <div className="bg-card mx-auto mt-6 max-w-md rounded-2xl border p-6 text-center shadow-sm">
